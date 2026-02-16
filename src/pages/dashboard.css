@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
 }
 
 .dash-phone {
@@ -14,6 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 24px;
 }
 
 .dash-wordmark {
