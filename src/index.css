@@ -1,7 +1,3 @@
-/* Minimal global styles */
-html, body, #root {
-  height: 100%;
-}
 
 :root {
   /* COLOURS */
@@ -18,9 +14,30 @@ html, body, #root {
   --font-body: "Futura Medium", "Futura", "Helvetica Neue", Arial, sans-serif;
 }
 
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--pistachio);
+  color: var(--kohl);
+}
+
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

@@ -39,6 +39,7 @@
   border: 1px solid var(--kohl);
   background: transparent;
   cursor: pointer;
+  color: var(--kohl);
 }
 
 .mode-btn.active {
@@ -58,6 +59,7 @@
   background: transparent;
   cursor: pointer;
   transition: 0.2s ease;
+  color: var(--kohl)
 }
 
 .user-submit:hover,
