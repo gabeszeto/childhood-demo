@@ -1,0 +1,68 @@
+/* PAGE WRAPPER */
+
+.about-page {
+  min-height: 100vh;
+  background: var(--pistachio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* CONTENT CARD */
+
+.about-card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  text-align: center;
+}
+
+/* TITLE */
+
+.about-title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 7vw, 56px);
+  margin: 0;
+}
+
+/* TEXT */
+
+.about-text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--kohl);
+}
+
+/* BUTTON */
+
+.about-button {
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: 2px solid var(--kohl);
+  background: transparent;
+  color: var(--kohl);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.about-button:hover {
+  background: var(--kohl);
+  color: var(--chalk);
+}
+
+/* DESKTOP SPACING */
+
+@media (min-width: 768px) {
+  .about-card {
+    gap: 36px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+}

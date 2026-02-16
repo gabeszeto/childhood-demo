@@ -1,0 +1,44 @@
+.dash-page {
+  min-height: 100vh;
+  background: var(--pistachio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.dash-phone {
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.dash-wordmark {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 9vw, 72px);
+  margin: 0;
+}
+
+.dash-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dash-btn {
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: 2px solid var(--kohl);
+  text-decoration: none;
+  color: var(--kohl);
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.dash-btn:hover {
+  background: var(--kohl);
+  color: var(--chalk);
+}

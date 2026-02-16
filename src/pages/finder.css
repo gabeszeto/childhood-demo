@@ -1,0 +1,107 @@
+.finder-page {
+  min-height: 100vh;
+  background: var(--pistachio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.finder-card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  text-align: center;
+}
+
+.finder-text {
+  border: 1px solid var(--kohl);
+  padding: 16px;
+  line-height: 1.5;
+  background: var(--pistachio);
+}
+
+/* FAKE AUDIO BAR */
+
+/* AUDIO BAR */
+
+.audio-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  /* border-bottom: 2px solid var(--kohl); */
+  padding-bottom: 8px;
+}
+
+/* PLAY BUTTON */
+
+.play-btn {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+/* WAVEFORM */
+
+.wave {
+  display: flex;
+  gap: 4px;
+  height: 24px;
+  align-items: flex-end;
+}
+
+.wave span {
+  width: 4px;
+  height: 6px;
+  background: var(--kohl);
+  border-radius: 2px;
+  transition: height 0.2s ease;
+}
+
+/* ANIMATION */
+
+.wave-active span {
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.wave-active span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave-active span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave-active span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave-active span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0% { height: 6px; }
+  50% { height: 22px; }
+  100% { height: 6px; }
+}
+
+
+/* BACK */
+
+.finder-back {
+  padding: 14px;
+  border-radius: 999px;
+  border: 2px solid var(--kohl);
+  background: transparent;
+  cursor: pointer;
+}
+
+.finder-back:hover {
+  background: var(--kohl);
+  color: var(--chalk);
+}

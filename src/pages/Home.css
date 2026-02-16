@@ -1,0 +1,131 @@
+/* PAGE */
+.home {
+  background: var(--pistachio);
+  min-height: 200vh;
+  font-family: "Georgia", serif; /* swap later if you add GT Super */
+  color: var(--kohl);
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wordmark {
+  font-size: clamp(52px, 10vw, 120px);
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+}
+
+.glyph-circle {
+  width: clamp(160px, 35vw, 280px);
+  height: clamp(160px, 35vw, 280px);
+  border-radius: 50%;
+  background: var(--brick);
+}
+
+/* CTA */
+.cta {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-inner {
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cta-text {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: 2px solid var(--kohl);
+  background: transparent;
+  color: var(--kohl);
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--kohl);
+  color: var(--chalk);
+}
+
+.link-btn {
+  display: block;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--kohl);
+  font-size: 14px;
+  background: var(--pistachio);
+  outline: none;
+}
+
+/* TEXT LINKS */
+
+.link-text {
+  font-size: 14px;
+  color: var(--kohl);
+  text-decoration: underline;
+  margin-top: 6px;
+}
+
+.link-text:hover {
+  opacity: 0.7;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 24px 0 8px;
+  opacity: 0.6;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--kohl);
+}
+
+.divider span {
+  margin: 0 10px;
+  font-size: 14px;
+}
+

@@ -1,0 +1,26 @@
+/* Minimal global styles */
+html, body, #root {
+  height: 100%;
+}
+
+:root {
+  /* COLOURS */
+  --pistachio: rgb(224, 226, 205); /* #E0E2CD */
+  --blossom: rgb(223, 189, 165);   /* #DFBDA5 */
+  --brick: rgb(220, 93, 60);       /* #DC5D3C */
+  --khaki: rgb(129, 128, 33);      /* #818021 */
+  --denim: rgb(42, 95, 140);       /* #2A5F8C */
+  --kohl: rgb(0, 0, 0);            /* #000000 */
+  --chalk: rgb(255, 255, 255);     /* #FFFFFF */
+
+  /* FONTS */
+  --font-display: "GT Super Display", Georgia, "Times New Roman", serif;
+  --font-body: "Futura Medium", "Futura", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
